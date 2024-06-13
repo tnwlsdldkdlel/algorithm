@@ -15,17 +15,28 @@ public class String7 {
 		System.out.println(string7.solution(str));
 	}
 
+//	public String solution(String data) {
+//		char[] dataArr = data.toLowerCase().toCharArray();
+//		String result = "YES";
+//		int index = 0;
+//		
+//		for(char c : dataArr) {
+//			if(c != dataArr[(dataArr.length - 1) - index]) {
+//				return "NO";
+//			}
+//			
+//			index ++;
+//		}
+//		
+//		return result;
+//	}
+	
 	public String solution(String data) {
-		char[] dataArr = data.toLowerCase().toCharArray();
-		String result = "YES";
-		int index = 0;
+		StringBuilder builder = new StringBuilder(data);
+		String result = "NO";
 		
-		for(char c : dataArr) {
-			if(c != dataArr[(dataArr.length - 1) - index]) {
-				return "NO";
-			}
-			
-			index ++;
+		if(data.equalsIgnoreCase(builder.reverse().toString())) {
+			result = "YES";
 		}
 		
 		return result;
