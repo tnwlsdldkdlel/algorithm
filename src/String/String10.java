@@ -22,7 +22,7 @@ public class String10 {
 	
 	public int[] solution(String data, char target) {
 		// 좌측으로 부터 target과 가까운 거리 구하기.
-		int len = data.length();
+		int len = 0;
 		int answerIndex = 0;
 		int[] answer = new int[data.length()];
 		
@@ -39,7 +39,7 @@ public class String10 {
 		
 		// 우측으로 부터 target과 가까운 거리 구하기.
 		// 단, 좌측과 비교해서 작은 숫자만.
-		len = data.length();
+		len = 0;
 		for(int i = data.length()-1; i >= 0 ; i--) {
 			if(data.charAt(i) == target) {
 				len = 0;
