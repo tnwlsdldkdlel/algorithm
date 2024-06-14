@@ -1,6 +1,5 @@
 package Array;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 // 점수계산
@@ -28,25 +27,20 @@ public class Array7 {
 		System.out.println(array7.solution(count, data));
 	}
 
-	public long solution(int count, int[] data) {
-		ArrayList<Integer> test = new ArrayList<>();
+	public int solution(int count, int[] data) {
 		int result = 0;
+		int cnt = 0;
 
 		for (int i : data) {
-			switch (i) {
-			case 1:
-				result++;
-				test.add(result);
-				break;
-			case 0:
-				result = 0;
-				test.add(result);
-				break;
+			if(i == 1) {
+				cnt ++;
+				result += cnt;
+			} else {
+				cnt = 0;
 			}
 		}
-		
 
-		return test.stream().count();
+		return result;
 	}
 
 }
