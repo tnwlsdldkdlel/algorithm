@@ -1,4 +1,4 @@
-package two_pointer;
+package twoPointer_slidingWindow;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 // 네 번째 줄에 M개의 배열 원소가 오름차순으로 주어집니다.
 // 각 리스트의 원소는 int형 변수의 크기를 넘지 않습니다.
 // 출력 : 오름차순으로 정렬된 배열을 출력합니다.
-public class two_pointers1 {
+public class twoPointer_slidingWindow1 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class two_pointers1 {
 			data2.add(scan.nextInt());
 		}
 
-		two_pointers1 pointers1 = new two_pointers1();
+		twoPointer_slidingWindow1 pointers1 = new twoPointer_slidingWindow1();
 		ArrayList<Integer> result = pointers1.solution(data1, data2);
 		result.forEach(data -> {
 			System.out.print(data + " ");

@@ -1,4 +1,4 @@
-package two_pointer;
+package twoPointer_slidingWindow;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 // 네 번째 줄에 M개의 원소가 주어집니다. 원소가 중복되어 주어지지 않습니다.
 // 각 집합의 원소는 1,000,000,000이하의 자연수입니다.
 // 출력 : 각 집합의 원소는 1,000,000,000이하의 자연수입니다.
-public class two_pointers2 {
+public class twoPointer_slidingWindow2 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class two_pointers2 {
 			data2.add(scan.nextInt());
 		}
 
-		two_pointers2 pointers2 = new two_pointers2();
+		twoPointer_slidingWindow2 pointers2 = new twoPointer_slidingWindow2();
 		ArrayList<Integer> result = pointers2.solution(data1, data2);
 		result.forEach(data -> {
 			System.out.print(data + " ");
